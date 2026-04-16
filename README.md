@@ -1,12 +1,8 @@
-Here is a formatted and visually appealing version of your README. I have added a prominent announcement for ACL 2026, included relevant emojis, structured the text for better readability, and added placeholders for your paper link and title.
-
-***
-
 # 🚀 [Hallucination Detection in LLMs with Topological Divergence on Attention Graphs]
 
 🎉 **Exciting News: This paper has been officially accepted to ACL 2026!** 🎉
 
-Welcome to the official code repository for our paper! This repository contains the complete implementation of our proposed method for hallucination detection, including dataset preprocessing, $\operatorname{MTop-Div}$ feature extraction, and the TOHA evaluation pipeline.
+Welcome to the official code repository for our paper! This repository contains the complete implementation of our proposed method for hallucination detection, including dataset preprocessing, MTop-Div feature extraction, and the TOHA evaluation pipeline.
 
 🔗 **[Read the Paper on arXiv (Link)](https://arxiv.org/abs/2504.10063)** | 📝 **[Cite our work (BibTeX)](#citation)** 
 
@@ -61,7 +57,6 @@ python run_mtopdiv.py
 
 ## 📜 Citation
 
-*(Optional: If you have your BibTeX ready, you can paste it here!)*
 ```bibtex
 @article{bazarova2025hallucination,
   title={Hallucination detection in llms with topological divergence on attention graphs},
