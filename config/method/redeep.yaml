@@ -1,0 +1,12 @@
+_target_: src.methods.ReDeEP
+model_name: ${model_name}
+dtype: float16 
+device: cuda
+cache_dir: cache/redeep
+
+chunk_size: 1
+knowledge_ffns: null
+copy_heads: null
+beta: null
+alpha: null
+
