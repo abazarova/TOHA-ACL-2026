@@ -1,4 +1,4 @@
-# 🚀 [Hallucination Detection in LLMs with Topological Divergence on Attention Graphs]
+# 🚀 Hallucination Detection in LLMs with Topological Divergence on Attention Graphs
 
 🎉 **Exciting News: This paper has been officially accepted to ACL 2026!** 🎉
 
