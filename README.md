@@ -36,11 +36,11 @@ Welcome to the official code repository for our paper! This repository contains 
 Here is a quick overview of how the repository is organized:
 
 *   **`config/`** ⚙️
-    *   Contains all `.yaml` configuration files for the different steps in the pipeline.
-    *   The configuration is split into main parts:
-        1.  **`data/`**: Configurations mapped to your raw `.csv` data files.
-        2.  **`preprocess/`**: Settings for dataset downloading and preprocessing scripts.
-        3.  **`method/`**: Settings for running both supervised baselines and our unsupervised methods for hallucination detection.
+    * Contains all .yaml configuration files, organized into the following key subdirectories:
+        1. **`method/`**: Parameters for running our unsupervised TOHA pipeline as well as the baseline methods.
+        2. **`preprocess/`**: Settings for downloading and preprocessing the datasets.
+        3. **`transfer/`**: Specific data and preprocessing configurations dedicated to running the transferability experiments.
+        4. **`evaluation/`**: General experiment settings ensuring reproducibility, such as test set splits, number of evaluation runs, and random seeds.
 *   **`container_setups/`** 📦
     *   Contains scripts and Dockerfiles needed for building and launching the reproducible container environment.
 *   **`src/`** 💻
@@ -52,7 +52,7 @@ Here is a quick overview of how the repository is organized:
 
 Once your container is running, your `.env` variables are set, and your `.csv` data configs are ready, you can easily execute the main pipeline. 
 
-To run the experiments, simply execute:
+To run TOHA, simply execute:
 ```bash
 python run_mtopdiv.py
 ```
