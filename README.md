@@ -22,6 +22,13 @@ Welcome to the official code repository for our paper! This repository contains 
     COMET_API_KEY=your_comet_api_key_here
     ```
 
+### 2. Data Preparation
+
+*   **📄 Load Datasets**: 
+    Prepare your raw data files in `.csv` format and place them into your working data directory.
+*   **⚙️ Configure Data**: 
+    Once your `.csv` files are ready, create or update the corresponding configuration files inside the `config/data/` folder and preprocessing files inside the `src/preprocess` folder so the pipeline knows how to load and parse your specific datasets.
+
 ---
 
 ## 📁 Directory Structure
@@ -30,15 +37,12 @@ Here is a quick overview of how the repository is organized:
 
 *   **`config/`** ⚙️
     *   Contains all `.yaml` configuration files for the different steps in the pipeline.
-    *   The configuration is split into two main parts:
-        1.  **`preprocess`**: Settings for dataset downloading and preprocessing scripts.
-        2.  **`method`**: Settings for running both supervised baselines and our unsupervised methods for hallucination detection.
+    *   The configuration is split into main parts:
+        1.  **`data/`**: Configurations mapped to your raw `.csv` data files.
+        2.  **`preprocess/`**: Settings for dataset downloading and preprocessing scripts.
+        3.  **`method/`**: Settings for running both supervised baselines and our unsupervised methods for hallucination detection.
 *   **`container_setups/`** 📦
     *   Contains scripts and Dockerfiles needed for building and launching the reproducible container environment.
-*   **`data/`** 📊
-    *   Used to store both the raw downloaded datasets and the preprocessed outputs.
-*   **`cache/`** 💾
-    *   Caches heavy computed data (such as LLM hidden states and raw attention maps) to prevent redundant computations and significantly speed up subsequent runs.
 *   **`src/`** 💻
     *   Contains all the core source code, including preprocessing, model inference, topological feature computation, and evaluation scripts.
 
@@ -46,7 +50,7 @@ Here is a quick overview of how the repository is organized:
 
 ## ▶️ Running the Pipeline
 
-Once your container is running and your `.env` variables are set, you can easily execute the main pipeline. 
+Once your container is running, your `.env` variables are set, and your `.csv` data configs are ready, you can easily execute the main pipeline. 
 
 To run the experiments, simply execute:
 ```bash
