@@ -4,7 +4,7 @@
 
 Welcome to the official code repository for our paper! This repository contains the complete implementation of our proposed method for hallucination detection, including dataset preprocessing, MTop-Div feature extraction, and the TOHA evaluation pipeline.
 
-🔗 **[Read the Paper on arXiv (Link)](https://arxiv.org/abs/2504.10063)** | 📝 **[Cite our work (BibTeX)](#citation)** 
+🔗 **[Read the Paper on arXiv (Link)](https://arxiv.org/abs/2504.10063)** 
 
 ---
 
