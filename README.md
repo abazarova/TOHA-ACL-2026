@@ -57,6 +57,11 @@ To run TOHA, simply execute:
 python run_mtopdiv.py
 ```
 
+To run baselines, execute:
+```bash
+python run_unsupervised.py
+```
+
 ---
 
 ## 📜 Citation
